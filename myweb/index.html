@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Raj - BSc CSIT Student & Aspiring IT Support, Network Support & System Administration Professional specializing in Linux, Cisco, Firewalls & Security.">
+    <meta name="keywords" content="Raj, IT Support, Network Support, Linux, Cisco, Active Directory, Wireshark, Firewall, System Administration, BSc CSIT, Nepal">
+    <meta name="author" content="Raj">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Raj | IT Support & Networking Portfolio">
+    <meta property="og:description" content="Building practical skills in networking, Linux, cybersecurity, system administration and IT infrastructure.">
+    <meta property="og:type" content="website">
+
+    <title>Raj | IT Support & Networking Portfolio</title>
+
+    <!-- Google Fonts (Plus Jakarta Sans & Fira Code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Faint Background Animated Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
+                <span>RAJ JIREL</span>
+            </a>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#labs">Labs</a>
+                <a href="#projects">Projects</a>
+                <a href="#journey">Journey</a>
+                <a href="#contact" class="nav-cta">Get In Touch</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <!-- Hero Text Content -->
+                    <div class="hero-content">
+                        <div class="status-badge">
+                            <span class="status-pulse"></span>
+                            <span>Currently learning & building</span>
+                        </div>
+
+                        <div class="hero-greeting">Hi, I'm Raj.</div>
+                        <h1 class="hero-title">IT Support & Networking Enthusiast</h1>
+
+                        <p class="hero-description">
+                            Building practical skills in networking, Linux, cybersecurity, system administration and IT infrastructure.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#labs" class="btn btn-primary">
+                                <i class="fa-solid fa-terminal"></i> Explore My Work
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fa-solid fa-paper-plane"></i> Contact Me
+                            </a>
+                        </div>
+
+                        <!-- Interactive Terminal Element -->
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <div class="terminal-title">raj@sys-admin:~ (bash)</div>
+                            </div>
+                            <div class="terminal-body" id="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="prompt">raj@sys-admin:~$</span>
+                                    <span class="cmd">whoami</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="res res-highlight">raj</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="prompt">raj@sys-admin:~$</span>
+                                    <span class="cmd">role</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="res">IT Support & Networking Enthusiast</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="prompt">raj@sys-admin:~$</span>
+                                    <span class="cmd">location</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="res">Nepal</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="prompt">raj@sys-admin:~$</span>
+                                    <span class="cmd">status</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="res res-highlight">Learning & Building...</span>
+                                </div>
+
+                                <div class="terminal-input-row">
+                                    <span class="prompt">raj@sys-admin:~$</span>
+                                    <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help'..." autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side Technical Graphic: Network Infrastructure -->
+                    <div class="hero-graphic">
+                        <div class="network-graphic-container">
+                            <div class="net-title">
+                                <span><i class="fa-solid fa-network-wired"></i> Network Infrastructure Topology</span>
+                                <span>ONLINE</span>
+                            </div>
+
+                            <div class="net-diagram">
+                                <!-- Row 1: End Device & Switch -->
+                                <div class="net-node-row">
+                                    <div class="net-node">
+                                        <div class="net-icon"><i class="fa-solid fa-laptop"></i></div>
+                                        <div>
+                                            <div class="net-label">User Workstation</div>
+                                            <div class="net-subtext">192.168.10.50/24</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="net-connector">
+                                        <div class="packet"></div>
+                                    </div>
+
+                                    <div class="net-node">
+                                        <div class="net-icon"><i class="fa-solid fa-server"></i></div>
+                                        <div>
+                                            <div class="net-label">L2 Switch</div>
+                                            <div class="net-subtext">VLAN 10 / Trunk</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Vertical Connection -->
+                                <div class="net-connector" style="width: 2px; height: 35px; margin: 0 auto;">
+                                    <div class="packet" style="animation-direction: alternate;"></div>
+                                </div>
+
+                                <!-- Row 2: Firewall & Server -->
+                                <div class="net-node-row">
+                                    <div class="net-node">
+                                        <div class="net-icon" style="color: #f59e0b; background: rgba(245, 158, 11, 0.1);"><i class="fa-solid fa-shield-halved"></i></div>
+                                        <div>
+                                            <div class="net-label">Sophos Firewall</div>
+                                            <div class="net-subtext">NAT / Gateway</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="net-connector">
+                                        <div class="packet"></div>
+                                    </div>
+
+                                    <div class="net-node">
+                                        <div class="net-icon" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);"><i class="fa-solid fa-hard-drive"></i></div>
+                                        <div>
+                                            <div class="net-label">Active Directory</div>
+                                            <div class="net-subtext">DNS / DHCP Server</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Vertical Connection -->
+                                <div class="net-connector" style="width: 2px; height: 35px; margin: 0 auto;">
+                                    <div class="packet"></div>
+                                </div>
+
+                                <!-- Row 3: Cloud WAN -->
+                                <div class="net-node-row" style="justify-content: center;">
+                                    <div class="net-node" style="min-width: 220px; justify-content: center; background: rgba(56, 189, 248, 0.08); border-color: var(--accent-cyan);">
+                                        <div class="net-icon"><i class="fa-solid fa-cloud"></i></div>
+                                        <div>
+                                            <div class="net-label">Internet / Cloud</div>
+                                            <div class="net-subtext">WAN Infrastructure</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-user"></i> About Me</div>
+                    <h2 class="section-title">Technically Curious & Hands-On</h2>
+                    <p class="section-subtitle">Learning by building real labs and troubleshooting systems.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-profile">
+                        <figure class="profile-portrait">
+                            <img class="profile-photo" src="profile.jpeg" alt="Portrait of Raj Babu Jirel">
+                            <figcaption class="profile-name">RAJ BABU JIREL</figcaption>
+                        </figure>
+                        <div class="about-text">
+                        <p>
+                            I am a <strong>BSc CSIT student</strong> with a strong passion for IT infrastructure, computer networking, system administration, and cybersecurity. 
+                        </p>
+                        <p>
+                            Instead of relying solely on theoretical study, I focus on building practical hands-on lab environments using Cisco Packet Tracer, Linux operating systems, VirtualBox, Docker, Wireshark, and firewall configurations.
+                        </p>
+                        <p>
+                            I aim to apply my problem-solving abilities in an IT Support, Network Support, or Junior System Administration role where I can contribute to maintaining reliable and secure IT operations.
+                        </p>
+
+                        <div class="interest-tags">
+                            <span class="tag"><i class="fa-solid fa-check"></i> IT Support</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Network Administration</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> System Administration</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Cybersecurity</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Infrastructure</span>
+                            <span class="tag"><i class="fa-solid fa-check"></i> Troubleshooting</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="stat-title">Networking</div>
+                            <div class="stat-desc">CCNA-focused learning</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-brands fa-linux"></i></div>
+                            <div class="stat-title">Linux</div>
+                            <div class="stat-desc">Hands-on labs</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <div class="stat-title">IT Support</div>
+                            <div class="stat-desc">Practical troubleshooting</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="stat-title">Cybersecurity</div>
+                            <div class="stat-desc">Security fundamentals</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS SECTION -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-gears"></i> Technical Stack</div>
+                    <h2 class="section-title">Core Technical Skills</h2>
+                    <p class="section-subtitle">Skill sets acquired through practical lab environments and academic coursework.</p>
+                </div>
+
+                <div class="skills-category-grid">
+
+                    <!-- 1. Networking -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <h3 class="category-title">Networking</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-solid fa-route"></i> Cisco Networking</span>
+                            <span class="skill-badge">VLAN</span>
+                            <span class="skill-badge">Inter-VLAN Routing</span>
+                            <span class="skill-badge">OSPF</span>
+                            <span class="skill-badge">NAT</span>
+                            <span class="skill-badge">DHCP</span>
+                            <span class="skill-badge">DNS</span>
+                            <span class="skill-badge">TCP/IP</span>
+                            <span class="skill-badge">OSI Model</span>
+                            <span class="skill-badge">Subnetting</span>
+                            <span class="skill-badge"><i class="fa-solid fa-eye"></i> Wireshark</span>
+                        </div>
+                    </div>
+
+                    <!-- 2. IT Support -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-headset"></i></div>
+                            <h3 class="category-title">IT Support</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-windows"></i> Windows Troubleshooting</span>
+                            <span class="skill-badge">Hardware Troubleshooting</span>
+                            <span class="skill-badge">Software Troubleshooting</span>
+                            <span class="skill-badge">System Diagnostics</span>
+                            <span class="skill-badge">Asset Management</span>
+                            <span class="skill-badge">Event Viewer</span>
+                            <span class="skill-badge">Device Manager</span>
+                            <span class="skill-badge">Task Manager</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Systems -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-server"></i></div>
+                            <h3 class="category-title">Systems Administration</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-linux"></i> Linux</span>
+                            <span class="skill-badge"><i class="fa-brands fa-windows"></i> Windows</span>
+                            <span class="skill-badge"><i class="fa-solid fa-users-gear"></i> Active Directory</span>
+                            <span class="skill-badge">Users & Groups</span>
+                            <span class="skill-badge">Linux Permissions</span>
+                            <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span class="skill-badge">VirtualBox</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Security -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-lock"></i></div>
+                            <h3 class="category-title">Security & Firewalls</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-solid fa-shield"></i> Firewalls</span>
+                            <span class="skill-badge">Sophos</span>
+                            <span class="skill-badge">Fortinet</span>
+                            <span class="skill-badge">Network Security</span>
+                            <span class="skill-badge">CIA Triad</span>
+                            <span class="skill-badge">Hashing</span>
+                            <span class="skill-badge">Honeypots</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MY TECHNICAL LAB SECTION -->
+        <section id="labs">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-flask"></i> Hands-On Practice</div>
+                    <h2 class="section-title">My Technical Lab</h2>
+                    <p class="section-subtitle">Real-world simulations and practical environment deployments.</p>
+                </div>
+
+                <div class="lab-intro">
+                    <div class="lab-intro-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="lab-intro-text">
+                        <p>
+                            I strongly believe that technical concepts are best understood through direct application. My personal home lab allows me to simulate real-world enterprise network infrastructures, firewall policies, Linux privilege hierarchies, and troubleshooting scenarios.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="labs-grid">
+
+                    <!-- Lab 1 -->
+                    <div class="lab-card">
+                        <div class="lab-card-top">
+                            <div class="lab-icon-badge"><i class="fa-solid fa-network-wired"></i></div>
+                            <h3 class="lab-title">Cisco Networking Lab</h3>
+                            <ul class="lab-items">
+                                <li>VLAN configuration</li>
+                                <li>Access and trunk ports</li>
+                                <li>Inter-VLAN routing</li>
+                                <li>OSPF routing protocol</li>
+                                <li>Router and switch configuration</li>
+                                <li>Cisco Packet Tracer simulations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lab 2 -->
+                    <div class="lab-card">
+                        <div class="lab-card-top">
+                            <div class="lab-icon-badge" style="color: #f59e0b; background: rgba(245, 158, 11, 0.1);"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3 class="lab-title">Sophos Firewall Lab</h3>
+                            <ul class="lab-items">
+                                <li>VLAN creation & tagging</li>
+                                <li>DHCP service configuration</li>
+                                <li>Firewall zone interfaces</li>
+                                <li>NAT rule implementation</li>
+                                <li>WAN/LAN route mapping</li>
+                                <li>Network traffic troubleshooting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lab 3 -->
+                    <div class="lab-card">
+                        <div class="lab-card-top">
+                            <div class="lab-icon-badge" style="color: #34d399; background: rgba(16, 185, 129, 0.1);"><i class="fa-brands fa-linux"></i></div>
+                            <h3 class="lab-title">Linux Lab</h3>
+                            <ul class="lab-items">
+                                <li>User and group management</li>
+                                <li>File permission configurations</li>
+                                <li>SUID and SGID bit settings</li>
+                                <li>Essential Linux CLI commands</li>
+                                <li>System service management</li>
+                                <li>System administration basics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lab 4 -->
+                    <div class="lab-card">
+                        <div class="lab-card-top">
+                            <div class="lab-icon-badge" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);"><i class="fa-solid fa-eye"></i></div>
+                            <h3 class="lab-title">Wireshark Lab</h3>
+                            <ul class="lab-items">
+                                <li>Packet capture & inspection</li>
+                                <li>ARP resolution analysis</li>
+                                <li>TCP/IP handshake analysis</li>
+                                <li>Protocol header analysis</li>
+                                <li>Network latency troubleshooting</li>
+                                <li>Traffic anomaly detection</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lab 5 -->
+                    <div class="lab-card">
+                        <div class="lab-card-top">
+                            <div class="lab-icon-badge" style="color: #06b6d4; background: rgba(6, 182, 212, 0.1);"><i class="fa-brands fa-docker"></i></div>
+                            <h3 class="lab-title">Docker Lab</h3>
+                            <ul class="lab-items">
+                                <li>Container lifecycle management</li>
+                                <li>Docker image builds</li>
+                                <li>Docker CLI commands</li>
+                                <li>Basic containerized applications</li>
+                                <li>Port mapping & networking</li>
+                                <li>Environment variable management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lab 6 -->
+                    <div class="lab-card">
+                        <div class="lab-card-top">
+                            <div class="lab-icon-badge" style="color: #ec4899; background: rgba(236, 72, 153, 0.1);"><i class="fa-solid fa-cash-register"></i></div>
+                            <h3 class="lab-title">Restaurant IT / POS Simulation</h3>
+                            <ul class="lab-items">
+                                <li>Point-of-Sale (POS) troubleshooting</li>
+                                <li>Windows OS diagnostics</li>
+                                <li>Event Viewer error isolation</li>
+                                <li>Background service management</li>
+                                <li>Device Manager driver checks</li>
+                                <li>Application troubleshooting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-folder-open"></i> Key Featured Work</div>
+                    <h2 class="section-title">Projects & Lab Showcases</h2>
+                    <p class="section-subtitle">Academic projects and specialized technical lab deployments.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: TravelToday -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <span class="project-tag-badge">Final Year Project</span>
+                                <i class="fa-solid fa-plane-departure" style="color: var(--accent-purple); font-size: 1.2rem;"></i>
+                            </div>
+                            <h3 class="project-title">TravelToday</h3>
+                            <p class="project-desc">
+                                A Nepal-focused travel planning platform incorporating machine learning for travel recommendations and budget prediction. Built with modern full-stack technologies and security practices.
+                            </p>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Express</span>
+                            <span class="tech-item">MongoDB</span>
+                            <span class="tech-item">FastAPI</span>
+                            <span class="tech-item">ML</span>
+                            <span class="tech-item">JWT</span>
+                            <span class="tech-item">RBAC</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Network Infrastructure Labs -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <span class="project-tag-badge lab-type">Networking Lab</span>
+                                <i class="fa-solid fa-network-wired" style="color: var(--accent-cyan); font-size: 1.2rem;"></i>
+                            </div>
+                            <h3 class="project-title">Network Infrastructure Labs</h3>
+                            <p class="project-desc">
+                                Simulated multi-segment network topology setup featuring VLAN segmentations, Inter-VLAN routing, dynamic OSPF routing, DHCP pools, NAT gateway rules, and firewall policy testing.
+                            </p>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">VLANs</span>
+                            <span class="tech-item">OSPF</span>
+                            <span class="tech-item">DHCP</span>
+                            <span class="tech-item">NAT</span>
+                            <span class="tech-item">Firewall</span>
+                            <span class="tech-item">Packet Tracer</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Linux Administration Lab -->
+                    <div class="project-card">
+                        <div>
+                            <div class="project-header">
+                                <span class="project-tag-badge lab-type">SysAdmin Lab</span>
+                                <i class="fa-brands fa-linux" style="color: #34d399; font-size: 1.2rem;"></i>
+                            </div>
+                            <h3 class="project-title">Linux Administration Lab</h3>
+                            <p class="project-desc">
+                                Comprehensive Linux server setup focusing on user account management, custom group permissions, SUID/SGID security bits, shell scripting, and core system administration utilities.
+                            </p>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="tech-item">Linux</span>
+                            <span class="tech-item">Permissions</span>
+                            <span class="tech-item">SUID/SGID</span>
+                            <span class="tech-item">Users & Groups</span>
+                            <span class="tech-item">Bash</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE / LEARNING JOURNEY -->
+        <section id="journey">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-timeline"></i> Timeline</div>
+                    <h2 class="section-title">Experience & Learning Journey</h2>
+                    <p class="section-subtitle">Academic milestones and practical training roadmap.</p>
+                </div>
+
+                <div class="timeline">
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2026</div>
+                            <h3 class="timeline-role">IT & Networking Internship</h3>
+                            <div class="timeline-org">Hands-on Industry Learning</div>
+                            <ul class="timeline-details">
+                                <li>Learning and working with enterprise network infrastructure</li>
+                                <li>Configuring firewalls and L2/L3 network switches</li>
+                                <li>Diagnosing and troubleshooting network connectivity issues</li>
+                                <li>Working with VLANs, Sophos firewalls, and HPE/Aruba networking equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2026</div>
+                            <h3 class="timeline-role">Practical Labs & Skill Building</h3>
+                            <div class="timeline-org">Self-Directed Technical Environment</div>
+                            <ul class="timeline-details">
+                                <li>Building complex network topologies in Cisco Packet Tracer</li>
+                                <li>Configuring Linux privilege boundaries and shell operations</li>
+                                <li>Analyzing network traffic packets with Wireshark</li>
+                                <li>Deploying Docker containerized environments</li>
+                                <li>Exploring Active Directory user management and cybersecurity fundamentals</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Undergraduate Degree</div>
+                            <h3 class="timeline-role">BSc CSIT Student</h3>
+                            <div class="timeline-org">National College of Computer Studies</div>
+                            <ul class="timeline-details">
+                                <li>Bachelor of Science in Computer Science and Information Technology</li>
+                                <li>Focusing on Computer Networks, Operating Systems, Database Systems, and Security</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CURRENTLY LEARNING -->
+        <section id="learning">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Continuous Growth</div>
+                    <h2 class="section-title">Currently Learning</h2>
+                    <p class="section-subtitle">Technologies and domains actively being explored and deepened.</p>
+                </div>
+
+                <div class="learning-grid">
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🌐</div>
+                        <div class="learning-title">Networking</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🐧</div>
+                        <div class="learning-title">Linux</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 70%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🐳</div>
+                        <div class="learning-title">Docker</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 60%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🔐</div>
+                        <div class="learning-title">Cybersecurity</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 65%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🖥️</div>
+                        <div class="learning-title">IT Support</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 80%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🛡️</div>
+                        <div class="learning-title">Firewalls</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 60%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">📡</div>
+                        <div class="learning-title">Network Monitoring</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 55%;"></div></div>
+                    </div>
+
+                    <div class="learning-card">
+                        <div class="learning-icon">🏢</div>
+                        <div class="learning-title">Active Directory</div>
+                        <div class="learning-progress-bar"><div class="learning-progress-fill" style="width: 65%;"></div></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS / LEARNING STATUS -->
+        <section id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-certificate"></i> Education & Status</div>
+                    <h2 class="section-title">Certifications & Learning Progress</h2>
+                    <p class="section-subtitle">Current status of professional certifications and study targets.</p>
+                </div>
+
+                <div class="certs-grid">
+
+                    <div class="cert-card">
+                        <div class="cert-info">
+                            <div class="cert-icon"><i class="fa-solid fa-route"></i></div>
+                            <div>
+                                <div class="cert-name">Cisco CCNA</div>
+                                <div class="cert-type">Cisco Certified Network Associate Target</div>
+                            </div>
+                        </div>
+                        <div class="cert-status-badge">Learning</div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-info">
+                            <div class="cert-icon"><i class="fa-brands fa-linux"></i></div>
+                            <div>
+                                <div class="cert-name">Linux Administration</div>
+                                <div class="cert-type">Hands-on Linux Operating Systems</div>
+                            </div>
+                        </div>
+                        <div class="cert-status-badge">Hands-on Learning</div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-info">
+                            <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <div class="cert-name">Cybersecurity Fundamentals</div>
+                                <div class="cert-type">Security Concepts & Practices</div>
+                            </div>
+                        </div>
+                        <div class="cert-status-badge">Learning</div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-info">
+                            <div class="cert-icon"><i class="fa-brands fa-docker"></i></div>
+                            <div>
+                                <div class="cert-name">Docker Essentials</div>
+                                <div class="cert-type">Containerization & Deployment</div>
+                            </div>
+                        </div>
+                        <div class="cert-status-badge">Learning</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag"><i class="fa-solid fa-envelope"></i> Connect</div>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Feel free to reach out for opportunities, collaborations, or technical discussions.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Info Details -->
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-label">EMAIL</div>
+                                <a class="contact-val" href="mailto:jirelraj875@gmail.com">jirelraj875@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="contact-label">LINKEDIN</div>
+                                <a class="contact-val" href="https://linkedin.com/in/raj-jirel/" target ="_blank" rel="noopener">Raj Jirel</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                            <div>
+                                <div class="contact-label">GITHUB</div>
+                                <a class="contact-val" href="https://github.com/Raj1jirel1" target="_blank" rel="noopener">Raj1jirel1</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <div class="contact-label">LOCATION</div>
+                                <div class="contact-val">Kathmandu Nepal</div>
+                            </div>
+                        </div>
+
+                        <div class="opportunity-note">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>Open to IT Support, Network Support, System Administration and Infrastructure opportunities.</span>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">YOUR NAME</label>
+                                <input type="text" id="name" class="form-input" placeholder="e.g. John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">YOUR EMAIL</label>
+                                <input type="email" id="email" class="form-input" placeholder="e.g. john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">YOUR MESSAGE</label>
+                                <textarea id="message" class="form-textarea" placeholder="How can I help you?" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/Raj1jirel1" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/search/results/people/?keywords=Raj%20Jirel" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:jirelraj875@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                </div>
+
+                <div class="footer-copy">
+                    &copy; 2026 Raj — Built with Pure HTML & CSS
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
